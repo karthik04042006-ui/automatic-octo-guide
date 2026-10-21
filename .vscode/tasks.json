@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run AQI frontend",
+			"type": "shell",
+			"command": "cd frontend && npm run dev -- --host 127.0.0.1",
+			"isBackground": true,
+			"problemMatcher": [],
+			"options": {
+				"shell": {
+					"executable": "C:\\Windows\\System32\\cmd.exe",
+					"args": ["/d", "/c"]
+				}
+			},
+			"group": "build"
+		},
+		{
+			"label": "Run AQI backend",
+			"type": "shell",
+			"command": "cd backend && ..\\.venv\\Scripts\\python.exe main.py",
+			"isBackground": true,
+			"problemMatcher": [],
+			"options": {
+				"shell": {
+					"executable": "C:\\Windows\\System32\\cmd.exe",
+					"args": ["/d", "/c"]
+				}
+			}
+		}
+	]
+}
